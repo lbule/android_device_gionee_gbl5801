@@ -13,6 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+ALLOW_MISSING_DEPENDENCIES=true
 
 LOCAL_PATH := device/gionee/gbl5801
 
