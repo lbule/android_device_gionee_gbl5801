@@ -41,10 +41,10 @@ TARGET_BOOTLOADER_BOARD_NAME := mt6795
 TARGET_NO_BOOTLOADER := true
 
 # KERNEL
-BOARD_KERNEL_CMDLINE   := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive androidboot.bootdevice=mtk-msdc.0
-BOARD_KERNEL_BASE      := 0x40080000
+BOARD_KERNEL_CMDLINE   := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive 
+BOARD_KERNEL_BASE      := 0x40078000
 BOARD_KERNEL_PAGESIZE  := 2048
-BOARD_MKBOOTIMG_ARGS   := --kernel_offset 0x00000000 --ramdisk_offset 0x03f80000 --tags_offset 0x0df80000
+BOARD_MKBOOTIMG_ARGS   := --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 --tags_offset 0x0df88000
 TARGET_PREBUILT_KERNEL := device/gionee/gbl5801/prebuilt/Image.gz
 
 # TARGET IMAGES
@@ -67,3 +67,5 @@ TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brigh
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_NO_USB_STORAGE := true
 TW_EXCLUDE_SUPERSU := true
+TW_EXTRA_LANGUAGES := true
+TW_DEFAULT_LANGUAGE := zh_CN
