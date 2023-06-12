@@ -34,7 +34,9 @@ TARGET_CPU_SMP := true
 
 # COMPILER FLAGS
 TARGET_GLOBAL_CFLAGS += -Wno-error=stringop-truncation
+TARGET_GLOBAL_CFLAGS += -Wno-stringop-truncation
 TARGET_GLOBAL_CPPFLAGS += -Wno-error=stringop-truncation
+TARGET_GLOBAL_CPPFLAGS += -Wno-stringop-truncation
 
 # BOOTLOADER
 TARGET_BOARD_PLATFORM := mt6795
