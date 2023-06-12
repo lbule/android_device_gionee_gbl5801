@@ -32,8 +32,8 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_CPU_SMP := true
 
 # COMPILER FLAGS
-TARGET_GLOBAL_CFLAGS +=  -Wno-error=unused-but-set-variable
-TARGET_GLOBAL_CPPFLAGS +=  -Wno-error=unused-but-set-variable
+TARGET_GLOBAL_CFLAGS += -Wno-error=stringop-truncation
+TARGET_GLOBAL_CPPFLAGS += -Wno-error=stringop-truncation
 
 # BOOTLOADER
 TARGET_BOARD_PLATFORM := mt6795
